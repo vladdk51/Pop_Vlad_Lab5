@@ -24,5 +24,10 @@ namespace Pop_Vlad_Lab5
         {
             InitializeComponent();
         }
+
+        private void Window_Loaded()
+        {
+
+        }
     }
 }
