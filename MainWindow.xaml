@@ -142,13 +142,15 @@ Header="Last Name" Width="SizeToHeader"/>
 Header="Make" Width="SizeToHeader"/>
                             <DataGridTextColumn x:Name="ColorColumn" Binding="{Binding Color}"
 Header="Color" Width="SizeToHeader"/>
-                        </DataGrid.Columns>
+                        </DataGrid.Columns>
+
                     </DataGrid>
                 </Grid>
             </TabItem>
         </TabControl>
         <ComboBox x:Name="CmbCustomers" HorizontalAlignment="Left" Margin="164,56,0,0" VerticalAlignment="Top" Width="120" SelectedValue="{Binding
-ElementName=ordersDataGrid,Path=SelectedItem.CustId,Mode=OneWay}">            >
+ElementName=ordersDataGrid,Path=SelectedItem.CustId,Mode=OneWay}">
+            >
             <ComboBox.ItemTemplate>
                 <DataTemplate>
                     <TextBlock>
